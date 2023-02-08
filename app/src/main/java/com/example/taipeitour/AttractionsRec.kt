@@ -3,13 +3,14 @@ package com.example.taipeitour
 import com.google.gson.annotations.SerializedName
 
 data class AttractionsRec(
+    @SerializedName("total") val total: Int,
     @SerializedName("data") val data: List<Attractions>
 )
 
 data class Attractions(
     val id: Int,
     val name: String,
-    val name_zh: String,
+    val name_zh: String?,
     val open_status: Int,
     val introduction: String,
     val open_time: String,
@@ -23,7 +24,7 @@ data class Attractions(
     @SerializedName("nlat")
     val latitude: Double,
     @SerializedName("elong")
-    val longitude: Float,
+    val longitude: Double,
     val official_site: String,
     val facebook: String,
     val ticket: String,
@@ -34,10 +35,10 @@ data class Attractions(
     val url: String,
     val category: List<AttractionsCategory>,
     val target: List<AttractionsTarget>,
-    val service: List<String>,
-    val friendly: List<String>,
-    val images: List<String>,
-    val files: List<String>,
+    val service: List<Any>,
+    val friendly: List<Any>,
+    val images: List<Any>,
+    val files: List<Any>,
     val links: List<AttractionsLinks>,
 
     )
@@ -53,6 +54,6 @@ data class AttractionsTarget(
 )
 
 data class AttractionsLinks(
-    val src: Int,
+    val src: String,
     val subject: String
 )

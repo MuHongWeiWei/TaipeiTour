@@ -34,7 +34,7 @@ class RetrofitUtils {
     }
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://data.taipei/api/v1/dataset/")
+        .baseUrl("https://www.travel.taipei/open-api/")
         .client(getClient())
         .addConverterFactory(GsonConverterFactory.create())
         .build()
