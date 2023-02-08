@@ -1,9 +1,11 @@
 package com.example.taipeitour
 
+import android.util.Log
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 
-class AttractionsPagingSource(private val attractionsService: AttractionsService) : PagingSource<Int, Attractions>() {
+class AttractionsPagingSource(private val attractionsService: AttractionsService) :
+    PagingSource<Int, Attractions>() {
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Attractions> {
         return try {
