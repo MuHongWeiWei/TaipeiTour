@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TaipeiTour</string>
+    <string name="changeLanguage">changeLanguage</string>
 </resources>
