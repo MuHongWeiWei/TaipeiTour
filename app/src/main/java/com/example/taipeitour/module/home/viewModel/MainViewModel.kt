@@ -1,7 +1,6 @@
 package com.example.taipeitour.module.home.viewModel
 
 import android.app.AlertDialog
-import android.util.Log
 import android.view.LayoutInflater
 import android.widget.RadioButton
 import android.widget.Toast
@@ -78,7 +77,8 @@ class MainViewModel : ViewModel() {
             override fun onResponse(call: Call, response: Response) {
                 val attractionsAllData = mutableListOf<AttractionsData>()
 
-                val attractionsPicture = Gson().fromJson(response.body!!.string(), AttractionsRelease::class.java)
+                val attractionsPicture =
+                    Gson().fromJson(response.body!!.string(), AttractionsRelease::class.java)
                 attractionsPicture.XML_Head?.Infos?.Info?.forEach {
                     attractionsAllData.add(it)
                 }

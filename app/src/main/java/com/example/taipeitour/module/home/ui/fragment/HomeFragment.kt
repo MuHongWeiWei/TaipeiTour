@@ -1,9 +1,6 @@
 package com.example.taipeitour.module.home.ui.fragment
 
 import android.os.Bundle
-import android.os.LocaleList
-import android.util.DisplayMetrics
-import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -12,13 +9,11 @@ import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.taipeitour.R
-import com.example.taipeitour.common.Language
 import com.example.taipeitour.databinding.FragmentHomeBinding
 import com.example.taipeitour.module.home.paging.AttractionsAdapter
 import com.example.taipeitour.module.home.paging.FooterAdapter
 import com.example.taipeitour.module.home.ui.activity.MainActivity
 import com.example.taipeitour.module.home.viewModel.HomeViewModel
-import com.example.taipeitour.utils.ActivityManage
 import com.hjq.language.MultiLanguages
 import kotlinx.coroutines.launch
 import java.util.*

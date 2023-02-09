@@ -1,4 +1,4 @@
-package com.example.taipeitour
+package com.example.taipeitour.module.home.dataModel.recive
 
 import com.google.gson.annotations.SerializedName
 

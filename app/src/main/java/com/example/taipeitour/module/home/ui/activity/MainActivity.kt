@@ -75,5 +75,4 @@ class MainActivity : BaseActivity() {
         binding.topAppBar.title = title
     }
 
-
 }

@@ -13,15 +13,6 @@
         android:theme="@style/Theme.TaipeiTour">
 
         <activity
-            android:name=".module.detail.ui.activity.WebViewActivity"
-            android:exported="false"
-            android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-
-        <activity
             android:name=".module.home.ui.activity.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">

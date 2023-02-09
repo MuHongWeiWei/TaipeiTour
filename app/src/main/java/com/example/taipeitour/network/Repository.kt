@@ -3,7 +3,7 @@ package com.example.taipeitour.network
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
-import com.example.taipeitour.Attractions
+import com.example.taipeitour.module.home.dataModel.recive.Attractions
 import com.example.taipeitour.module.home.paging.AttractionsPagingSource
 import com.example.taipeitour.network.api.AttractionsService
 import com.example.taipeitour.utils.RetrofitUtils

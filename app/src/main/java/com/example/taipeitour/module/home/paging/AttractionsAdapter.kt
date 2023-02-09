@@ -14,7 +14,7 @@ import com.bumptech.glide.Priority
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestOptions
-import com.example.taipeitour.Attractions
+import com.example.taipeitour.module.home.dataModel.recive.Attractions
 import com.example.taipeitour.R
 import com.example.taipeitour.dataModel.Infos
 import com.example.taipeitour.databinding.AttractionsItemBinding

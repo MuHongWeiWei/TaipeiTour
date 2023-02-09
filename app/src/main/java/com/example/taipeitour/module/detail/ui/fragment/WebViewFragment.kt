@@ -7,11 +7,9 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.taipeitour.R
 import com.example.taipeitour.databinding.FragmentWebViewBinding
-import com.example.taipeitour.module.detail.viewModel.WebViewModel
 import com.example.taipeitour.module.home.ui.activity.MainActivity
 
 /**
@@ -24,14 +22,11 @@ import com.example.taipeitour.module.home.ui.activity.MainActivity
 class WebViewFragment : Fragment(R.layout.fragment_web_view) {
 
     lateinit var binding: FragmentWebViewBinding
-    val viewModel: WebViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding = FragmentWebViewBinding.bind(view)
-
-        binding.viewModel = viewModel
         binding.lifecycleOwner = this
 
         initView()
@@ -40,15 +35,16 @@ class WebViewFragment : Fragment(R.layout.fragment_web_view) {
     private fun initView() {
         val title = arguments?.getString("title")
         (activity as MainActivity).upTitle(title)
-        (activity as MainActivity).onBackPressedDispatcher.addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                if (binding.webView.canGoBack()) {
-                    binding.webView.goBack()
-                } else {
-                    findNavController().popBackStack()
+        (activity as MainActivity).onBackPressedDispatcher.addCallback(viewLifecycleOwner,
+            object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    if (binding.webView.canGoBack()) {
+                        binding.webView.goBack()
+                    } else {
+                        findNavController().popBackStack()
+                    }
                 }
-            }
-        })
+            })
 
         arguments?.getString("url")?.let { url ->
             binding.webView.settings.javaScriptEnabled = true

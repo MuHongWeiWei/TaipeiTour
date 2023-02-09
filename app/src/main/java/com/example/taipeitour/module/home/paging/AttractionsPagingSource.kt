@@ -2,7 +2,7 @@ package com.example.taipeitour.module.home.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.example.taipeitour.Attractions
+import com.example.taipeitour.module.home.dataModel.recive.Attractions
 import com.example.taipeitour.network.api.AttractionsService
 
 class AttractionsPagingSource(
