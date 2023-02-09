@@ -25,9 +25,7 @@ class AttractionsAdapter :
     }
 
     override fun onBindViewHolder(holder: AttractionsHolder, position: Int) {
-
         getItem(position)?.apply {
-            Log.e("GGG", this.name)
             holder.bind(this)
         }
     }

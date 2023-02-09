@@ -36,12 +36,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             }
         }
 
-        CoroutineScope(Dispatchers.IO).launch {
-            val aa = RetrofitUtils.instance.getService(AttractionsService::class.java).getAttractions()
-            Log.e("GGG", aa.data.size.toString())
-        }
-
-
 //        attractionsAdapter.addLoadStateListener {
 //            when(it.refresh) {
 //                is LoadState.NotLoading -> {
