@@ -12,7 +12,7 @@ class AttractionsPagingSource(private val attractionsService: AttractionsService
         return try {
             val page = params.key ?: 1
             val pageSize = params.loadSize
-            val attractionsRec = attractionsService.searchAttractions(page, pageSize)
+            val attractionsRec = attractionsService.searchAttractions("zh-tw",page, pageSize)
             val attractions = attractionsRec.data
             val prevKey = if (page > 1) page - 1 else null
             val nextKey = if (attractions.isNotEmpty()) page + 1 else null
