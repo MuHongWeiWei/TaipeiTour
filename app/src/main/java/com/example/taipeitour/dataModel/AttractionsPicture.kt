@@ -1,11 +1,11 @@
-package com.example.taipeitour
+package com.example.taipeitour.dataModel
 
 /**
  * Author: FlyWei
  * E-mail: tony91097@gmail.com
  * Date: 2023/2/9
  */
-data class AttractionsPicture(
+data class AttractionsRelease(
     val XML_Head: Head?
 )
 
@@ -14,10 +14,10 @@ data class Head(
 )
 
 data class Infos(
-    val Info: List<Data>
+    val Info: List<AttractionsData>
 )
 
-data class Data(
+data class AttractionsData(
     val Name: String?,
     val Picture1: String?,
 )

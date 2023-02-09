@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 
 object Repository {
 
-    private const val PAGE_SIZE = 20
+    private const val PAGE_SIZE = 50
 
     private val attractionsService = RetrofitUtils.instance.getService(AttractionsService::class.java)
 

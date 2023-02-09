@@ -35,18 +35,5 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 attractionsAdapter.submitData(pagingData)
             }
         }
-
-//        attractionsAdapter.addLoadStateListener {
-//            when(it.refresh) {
-//                is LoadState.NotLoading -> {
-//                    binding
-//                }
-//            }
-//        }
-
-
-
     }
-
-
 }

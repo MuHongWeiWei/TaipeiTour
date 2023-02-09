@@ -15,9 +15,10 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/appCompatImageView"
+            android:id="@+id/picture"
             android:layout_width="@dimen/_80sdp"
             android:layout_height="@dimen/_80sdp"
+            android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -35,8 +36,8 @@
             android:textStyle="bold"
             android:textSize="@dimen/_14ssp"
             app:layout_constraintEnd_toStartOf="@+id/appCompatImageView2"
-            app:layout_constraintStart_toEndOf="@+id/appCompatImageView"
-            app:layout_constraintTop_toTopOf="@+id/appCompatImageView" />
+            app:layout_constraintStart_toEndOf="@+id/picture"
+            app:layout_constraintTop_toTopOf="@+id/picture" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/appCompatTextView"
@@ -48,7 +49,7 @@
             tools:text="超級高的台北"
             android:text="@{attractions.introduction}"
             android:textSize="@dimen/_10ssp"
-            app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/picture"
             app:layout_constraintEnd_toStartOf="@+id/appCompatImageView2"
             app:layout_constraintStart_toStartOf="@+id/appCompatTextView2"
             app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
@@ -60,9 +61,9 @@
             android:layout_marginEnd="@dimen/_8sdp"
             android:src="@drawable/next"
             android:tint="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/picture"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/appCompatImageView" />
+            app:layout_constraintTop_toTopOf="@+id/picture" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

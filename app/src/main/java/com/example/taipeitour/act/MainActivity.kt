@@ -6,8 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import com.example.taipeitour.AttractionsPicture
 import com.example.taipeitour.R
+import com.example.taipeitour.dataModel.AttractionsData
+import com.example.taipeitour.dataModel.AttractionsRelease
+import com.example.taipeitour.dataModel.Infos
 import com.example.taipeitour.databinding.ActivityMainBinding
 import com.example.taipeitour.utils.SharedInfo
 import com.google.gson.Gson
@@ -23,8 +25,8 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        val attractionsPicture = SharedInfo.instance.getEntity(AttractionsPicture::class.java)
-        if (attractionsPicture == null) {
+        val attractionsInfos = SharedInfo.instance.getEntity(Infos::class.java)
+        if (attractionsInfos == null) {
             getAttractionsPicture()
         }
     }
@@ -38,16 +40,14 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
                 R.id.homeFragment -> {
-                    binding.topAppBar.title = "TaipeiTour"
+                    binding.topAppBar.title = "台北旅遊網"
                 }
                 R.id.detailFragment -> {
-                    binding.topAppBar.title = "旅遊"
-
+                    binding.topAppBar.title = "名稱"
                 }
             }
         }
     }
-
 
     private fun getAttractionsPicture() {
         val client = OkHttpClient.Builder().build()
@@ -61,9 +61,15 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onResponse(call: Call, response: Response) {
-                val attractionsPicture =
-                    Gson().fromJson(response.body!!.string(), AttractionsPicture::class.java)
-                SharedInfo.instance.saveEntity(attractionsPicture)
+                // 儲存資訊
+                val attractionsAllData = mutableListOf<AttractionsData>()
+
+                val attractionsPicture = Gson().fromJson(response.body!!.string(), AttractionsRelease::class.java)
+                attractionsPicture.XML_Head?.Infos?.Info?.forEach {
+                    attractionsAllData.add(it)
+                }
+
+                SharedInfo.instance.saveEntity(Infos(attractionsAllData))
             }
         })
     }
