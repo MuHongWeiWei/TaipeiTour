@@ -1,8 +1,11 @@
 package com.example.taipeitour.module.detail.viewModel
 
+import androidx.core.os.bundleOf
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.navigation.NavController
+import com.example.taipeitour.R
 
 /**
  * Author: FlyWei
@@ -30,9 +33,8 @@ class DetailViewModel : ViewModel() {
         _url.value = url.toString()
     }
 
-    fun openWebView() {
-
+    fun openWebView(findNavController: NavController) {
+        findNavController.navigate(R.id.webViewFragment, bundleOf("title" to title.value, "url" to url.value))
     }
-
 
 }

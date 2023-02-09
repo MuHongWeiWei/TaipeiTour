@@ -15,4 +15,8 @@
         android:id="@+id/detailFragment"
         android:name="com.example.taipeitour.module.detail.ui.fragment.DetailFragment"
         tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.taipeitour.module.detail.ui.fragment.WebViewFragment"
+        android:label="WebViewFragment" />
 </navigation>

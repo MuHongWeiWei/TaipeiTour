@@ -43,6 +43,10 @@ class MainActivity : BaseActivity() {
                     binding.topAppBar.title = ""
                     binding.topAppBar.menu.setGroupVisible(0, false)
                 }
+                R.id.webViewFragment -> {
+                    binding.topAppBar.title = ""
+                    binding.topAppBar.menu.setGroupVisible(0, false)
+                }
             }
         }
 
@@ -70,5 +74,6 @@ class MainActivity : BaseActivity() {
     fun upTitle(title: String?) {
         binding.topAppBar.title = title
     }
+
 
 }
