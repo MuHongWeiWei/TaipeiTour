@@ -80,7 +80,7 @@ class AttractionsAdapter(val findNavController: NavController) :
             binding.executePendingBindings()
 
             itemView.setOnClickListener {
-                val bundle = bundleOf("picture" to nowPicture, "title" to attractions.name, "introduction" to attractions.introduction)
+                val bundle = bundleOf("picture" to nowPicture, "title" to attractions.name, "introduction" to attractions.introduction, "url" to attractions.url)
                 findNavController.navigate(R.id.detailFragment, bundle, navOptions {
                     anim {
                         enter = R.anim.slide_in_right

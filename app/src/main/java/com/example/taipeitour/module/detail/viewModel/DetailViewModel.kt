@@ -3,8 +3,6 @@ package com.example.taipeitour.module.detail.viewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.bumptech.glide.Glide
-import com.example.taipeitour.utils.ActivityManage
 
 /**
  * Author: FlyWei
@@ -25,14 +23,12 @@ class DetailViewModel : ViewModel() {
     private val _url = MutableLiveData<String>()
     val url: LiveData<String> = _url
 
-    fun setData(picture: String?, title: String?, introduction: String?) {
+    fun setData(picture: String?, title: String?, introduction: String?, url: String?) {
         _picture.value = picture.toString()
         _title.value = title.toString()
         _content.value = introduction.toString()
-        _url.value = "87"
+        _url.value = url.toString()
     }
-
-
 
 
 }

@@ -29,9 +29,10 @@ class DetailFragment : Fragment(R.layout.fragment_detail) {
         val picture = arguments?.getString("picture")
         val title = arguments?.getString("title")
         val introduction = arguments?.getString("introduction")
+        val url = arguments?.getString("url")
 
         (activity as MainActivity).upTitle(title)
-        viewModel.setData(picture, title, introduction)
+        viewModel.setData(picture, title, introduction, url)
     }
 
 }
