@@ -1,14 +1,12 @@
 package com.example.taipeitour.act
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.taipeitour.R
+import androidx.appcompat.app.AppCompatActivity
 import com.example.taipeitour.databinding.ActivityWebViewBinding
-import com.example.taipeitour.delegate.contentView
 
 class WebViewActivity : AppCompatActivity() {
 
-    private val binding: ActivityWebViewBinding by contentView(R.layout.activity_web_view)
+    private lateinit var binding: ActivityWebViewBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

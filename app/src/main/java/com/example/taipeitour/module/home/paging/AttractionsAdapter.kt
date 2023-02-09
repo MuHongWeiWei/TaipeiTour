@@ -54,9 +54,8 @@ class AttractionsAdapter :
         fun bind(attractions: Attractions) {
             attractionsInfos?.Info?.onEach {
                 if (it.Name == attractions.name) {
-                    val options: RequestOptions = RequestOptions()
+                    val options = RequestOptions()
                         .error(R.drawable.logo)
-                        .diskCacheStrategy(DiskCacheStrategy.NONE)
 
                     Glide.with(ActivityManage.peek()!!)
                         .load(it.Picture1)

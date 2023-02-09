@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">台北旅遊網</string>
     <string name="changeLanguage">換語言</string>
+    <string name="refresh">重整</string>
 </resources>
