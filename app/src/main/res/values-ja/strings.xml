@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">台北トラベルネット</string>
+    <string name="please_choice_language">言語を選択してください</string>
+    <string name="refresh">再編</string>
+    <string name="changeLanguage">言語</string>
+</resources>

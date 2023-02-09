@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">타이페이 트래블 넷</string>
+    <string name="changeLanguage">언어</string>
+    <string name="refresh">개편</string>
+    <string name="please_choice_language">언어를 선택하십시오</string>
+</resources>

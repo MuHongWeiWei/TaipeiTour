@@ -21,8 +21,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_scrollFlags="scroll|enterAlways|snap"
-            app:menu="@menu/top_app_bar"
-            app:title="標題" />
+            app:menu="@menu/top_app_bar" />
 
 
         <androidx.fragment.app.FragmentContainerView

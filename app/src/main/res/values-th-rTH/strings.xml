@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ไทเปทราเวลเน็ต</string>
+    <string name="please_choice_language">กรุณาเลือกภาษา</string>
+    <string name="refresh">การปรับโครงสร้างองค์กร</string>
+    <string name="changeLanguage">ภาษา</string>
+</resources>

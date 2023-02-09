@@ -2,11 +2,13 @@ package com.example.taipeitour
 
 import android.app.Activity
 import android.app.Application
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import com.example.taipeitour.common.BaseParams
 import com.example.taipeitour.utils.ActivityManage
 import com.example.taipeitour.utils.SharedInfo
+import com.hjq.language.MultiLanguages
 
 /**
  * Author: FlyWei
@@ -22,6 +24,7 @@ class MyApplication : Application() {
         super.onCreate()
 
         SharedInfo.init(BaseParams.SP_NAME, applicationContext)
+        MultiLanguages.init(this)
 
         registerActivityLifecycleCallbacks(object : ActivityLifecycleCallbacks {
             override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
@@ -59,4 +62,9 @@ class MyApplication : Application() {
             }
         })
     }
+
+    override fun attachBaseContext(base: Context?) {
+        super.attachBaseContext(MultiLanguages.attach(base))
+    }
+
 }

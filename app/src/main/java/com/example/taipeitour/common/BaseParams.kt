@@ -12,5 +12,6 @@ object BaseParams {
     const val URL_RELEASE = BuildConfig.ServerAddress
 
     const val SP_NAME = "basic_params"
+    const val NOW_LANGUAGE = "now_language"
 
 }

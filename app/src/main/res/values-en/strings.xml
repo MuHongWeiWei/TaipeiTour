@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taipei Travel Net</string>
+    <string name="changeLanguage">language</string>
+    <string name="refresh">reorganization</string>
+    <string name="please_choice_language">Please select language</string>
+</resources>

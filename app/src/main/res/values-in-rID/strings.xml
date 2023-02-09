@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jaring Perjalanan Taipei</string>
+    <string name="changeLanguage">bahasa</string>
+    <string name="refresh">reorganisasi</string>
+    <string name="please_choice_language">Silakan pilih bahasa</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">台北旅游网</string>
+    <string name="changeLanguage">语言</string>
+    <string name="refresh">重整</string>
+    <string name="please_choice_language">请选择语言</string>
+</resources>

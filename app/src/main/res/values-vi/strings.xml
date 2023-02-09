@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mạng du lịch Đài Bắc</string>
+    <string name="changeLanguage">ngôn ngữ</string>
+    <string name="refresh">tổ chức lại</string>
+    <string name="please_choice_language">Vui lòng chọn ngôn ngữ</string>
+</resources>

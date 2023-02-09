@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Red de viajes de Taipéi</string>
+    <string name="please_choice_language">Por favor selecciona idioma</string>
+    <string name="refresh">reorganización</string>
+    <string name="changeLanguage">idioma</string>
+</resources>
