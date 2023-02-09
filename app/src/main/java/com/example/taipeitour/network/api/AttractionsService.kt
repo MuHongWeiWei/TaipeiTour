@@ -1,5 +1,6 @@
-package com.example.taipeitour
+package com.example.taipeitour.network.api
 
+import com.example.taipeitour.AttractionsRec
 import retrofit2.http.*
 
 interface AttractionsService {

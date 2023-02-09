@@ -1,9 +1,12 @@
-package com.example.taipeitour
+package com.example.taipeitour.network
 
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
-import com.example.taipeitour.util.RetrofitUtils
+import com.example.taipeitour.Attractions
+import com.example.taipeitour.module.home.paging.AttractionsPagingSource
+import com.example.taipeitour.network.api.AttractionsService
+import com.example.taipeitour.utils.RetrofitUtils
 import kotlinx.coroutines.flow.Flow
 
 object Repository {

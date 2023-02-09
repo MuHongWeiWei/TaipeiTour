@@ -1,6 +1,7 @@
-package com.example.taipeitour.util
+package com.example.taipeitour.utils
 
 import com.example.taipeitour.BuildConfig
+import com.example.taipeitour.common.BaseParams
 import com.example.taipeitour.network.HttpLoggingInterceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -34,7 +35,7 @@ class RetrofitUtils {
     }
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://www.travel.taipei/open-api/")
+        .baseUrl(BaseParams.URL_RELEASE)
         .client(getClient())
         .addConverterFactory(GsonConverterFactory.create())
         .build()

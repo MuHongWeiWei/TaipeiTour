@@ -1,4 +1,4 @@
-package com.example.taipeitour
+package com.example.taipeitour.module.home.paging
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.taipeitour.Attractions
 import com.example.taipeitour.databinding.AttractionsItemBinding
 
 class AttractionsAdapter :

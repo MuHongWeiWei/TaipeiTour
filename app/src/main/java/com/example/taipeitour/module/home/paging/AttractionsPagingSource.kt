@@ -1,8 +1,9 @@
-package com.example.taipeitour
+package com.example.taipeitour.module.home.paging
 
-import android.util.Log
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
+import com.example.taipeitour.Attractions
+import com.example.taipeitour.network.api.AttractionsService
 
 class AttractionsPagingSource(private val attractionsService: AttractionsService) :
     PagingSource<Int, Attractions>() {

@@ -1,16 +1,13 @@
-package com.example.taipeitour
+package com.example.taipeitour.act
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.lifecycleScope
-import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
+import com.example.taipeitour.R
 import com.example.taipeitour.databinding.ActivityMainBinding
-import kotlinx.coroutines.launch
+import com.example.taipeitour.delegate.contentView
 
 class MainActivity : AppCompatActivity() {
 
