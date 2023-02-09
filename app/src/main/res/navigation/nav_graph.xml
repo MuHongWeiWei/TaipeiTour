@@ -8,16 +8,11 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.taipeitour.module.home.ui.HomeFragment"
-        android:label="HomeFragment"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
+        tools:layout="@layout/fragment_home">
     </fragment>
 
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.taipeitour.module.detail.ui.DetailFragment"
-        android:label="DetailFragment"
         tools:layout="@layout/fragment_detail" />
 </navigation>

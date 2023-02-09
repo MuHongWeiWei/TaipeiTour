@@ -41,12 +41,15 @@ class MainActivity : AppCompatActivity() {
             when (destination.id) {
                 R.id.homeFragment -> {
                     binding.topAppBar.title = "台北旅遊網"
-                }
-                R.id.detailFragment -> {
-                    binding.topAppBar.title = "名稱"
+                    binding.topAppBar.menu.setGroupVisible(0, true)
                 }
             }
         }
+    }
+
+    fun upTitle(title: String?) {
+        binding.topAppBar.title = title
+        binding.topAppBar.menu.setGroupVisible(0, false)
     }
 
     private fun getAttractionsPicture() {

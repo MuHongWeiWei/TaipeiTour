@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.navigation.NavController
+import androidx.navigation.navOptions
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
@@ -80,7 +81,14 @@ class AttractionsAdapter(val findNavController: NavController) :
 
             itemView.setOnClickListener {
                 val bundle = bundleOf("picture" to nowPicture, "title" to attractions.name, "introduction" to attractions.introduction)
-                findNavController.navigate(R.id.detailFragment, bundle)
+                findNavController.navigate(R.id.detailFragment, bundle, navOptions {
+                    anim {
+                        enter = R.anim.slide_in_right
+                        exit = R.anim.slide_out_left
+                        popEnter = R.anim.slide_in_left
+                        popExit = R.anim.slide_out_right
+                    }
+                })
             }
         }
     }
