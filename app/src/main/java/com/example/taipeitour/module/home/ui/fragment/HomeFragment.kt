@@ -1,4 +1,4 @@
-package com.example.taipeitour.module.home.ui
+package com.example.taipeitour.module.home.ui.fragment
 
 import android.os.Bundle
 import android.view.View

@@ -1,4 +1,4 @@
-package com.example.taipeitour.act
+package com.example.taipeitour.module.detail.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

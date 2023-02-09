@@ -1,12 +1,13 @@
-package com.example.taipeitour.module.detail.ui
+package com.example.taipeitour.module.detail.ui.fragment
 
 import android.graphics.Paint
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.example.taipeitour.R
-import com.example.taipeitour.act.MainActivity
+import com.example.taipeitour.module.home.ui.activity.MainActivity
 import com.example.taipeitour.databinding.FragmentDetailBinding
 import com.example.taipeitour.module.detail.viewModel.DetailViewModel
 

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="#FF0000">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_dialog_language_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/please_choice_language"
+                android:textSize="@dimen/_18ssp" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/languageGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_zh_tw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:text="繁體中文"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_zh_cn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:text="簡體中文"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_en"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="英文"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_ja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:text="日文"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_ko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:text="韓文"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_es"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:text="西班牙文"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:text="印尼文"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_th"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:text="泰文"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_vi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:text="越南文"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="確定"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="取消"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

@@ -1,4 +1,4 @@
-package com.example.taipeitour
+package com.example.taipeitour.common
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter

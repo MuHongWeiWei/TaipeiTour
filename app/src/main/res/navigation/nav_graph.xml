@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.taipeitour.module.home.ui.HomeFragment"
+        android:name="com.example.taipeitour.module.home.ui.fragment.HomeFragment"
         tools:layout="@layout/fragment_home">
     </fragment>
 
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.taipeitour.module.detail.ui.DetailFragment"
+        android:name="com.example.taipeitour.module.detail.ui.fragment.DetailFragment"
         tools:layout="@layout/fragment_detail" />
 </navigation>
