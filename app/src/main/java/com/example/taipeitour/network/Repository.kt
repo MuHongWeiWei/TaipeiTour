@@ -15,9 +15,9 @@ object Repository {
 
     private val attractionsService = RetrofitUtils.instance.getService(AttractionsService::class.java)
 
-    fun getPagingData(): Flow<PagingData<Attractions>> = Pager(
+    fun getPagingData(lang: String): Flow<PagingData<Attractions>> = Pager(
         config = PagingConfig(PAGE_SIZE),
-        pagingSourceFactory = { AttractionsPagingSource(attractionsService) }
+        pagingSourceFactory = { AttractionsPagingSource(attractionsService, lang) }
     ).flow
 
 }

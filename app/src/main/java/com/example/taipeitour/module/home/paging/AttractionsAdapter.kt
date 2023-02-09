@@ -62,19 +62,21 @@ class AttractionsAdapter(val findNavController: NavController) :
             attractionsInfos?.Info?.onEach {
                 if (it.Name == attractions.name) {
                     nowPicture = it.Picture1
-                    val options = RequestOptions()
-                        .priority(Priority.NORMAL)
-                        .placeholder(R.drawable.logo)
-                        .diskCacheStrategy(DiskCacheStrategy.NONE)
-                        .error(R.drawable.logo)
-
-                    Glide.with(ActivityManage.peek()!!)
-                        .load(it.Picture1)
-                        .apply(options)
-                        .transition(DrawableTransitionOptions.withCrossFade())
-                        .into(binding.picture)
+                    return@onEach
                 }
             }
+
+            val options = RequestOptions()
+                .priority(Priority.NORMAL)
+                .placeholder(R.drawable.logo)
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .error(R.drawable.logo)
+
+            Glide.with(ActivityManage.peek()!!)
+                .load(nowPicture)
+                .apply(options)
+                .transition(DrawableTransitionOptions.withCrossFade())
+                .into(binding.picture)
 
             binding.attractions = attractions
             binding.executePendingBindings()

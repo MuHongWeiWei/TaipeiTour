@@ -10,8 +10,8 @@ import kotlinx.coroutines.flow.Flow
 
 class HomeViewModel : ViewModel() {
 
-    fun getPagingData(): Flow<PagingData<Attractions>> {
-        return Repository.getPagingData().cachedIn(viewModelScope)
+    fun getPagingData(lang: String): Flow<PagingData<Attractions>> {
+        return Repository.getPagingData(lang).cachedIn(viewModelScope)
     }
 
 }

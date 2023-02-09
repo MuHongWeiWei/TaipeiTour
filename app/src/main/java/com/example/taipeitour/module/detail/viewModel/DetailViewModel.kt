@@ -30,5 +30,9 @@ class DetailViewModel : ViewModel() {
         _url.value = url.toString()
     }
 
+    fun openWebView() {
+
+    }
+
 
 }
